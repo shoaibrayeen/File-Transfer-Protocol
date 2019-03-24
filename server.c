@@ -1,10 +1,7 @@
 #include <stdio.h>
-#include <iostream>
 #include <netinet/in.h>
 #include <sys/types.h>
 #include <sys/socket.h>
-
-using namespace std;
 #define PORT 12345
 
 
@@ -47,8 +44,6 @@ int main() {
         bzero(buffer, sizeof(buffer));
         read(acceptOutput , buffer , sizeof(buffer));
         printf("%d" , sizeof(buffer));
-        //int len = sizeof(buffer);
-        //substring(buffer , buffer , 0 , len);
         printf("\nMessage Received\t:\t%s\n" , buffer);
         if(strcmp(buffer ,"QUIT") == 0 ) {
             break;
