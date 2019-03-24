@@ -1,11 +1,8 @@
 #include <stdio.h>
 #include <netinet/in.h>
-#include <iostream>
 #include <sys/types.h>
 #include <sys/socket.h>
-#include <strings.h>
-
-using namespace std;
+#include <string.h>
 #define PORT 12345
 
 int main() {
